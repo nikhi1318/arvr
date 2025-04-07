@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UrbanOak – 3D Scroll Experience</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <!-- 3D Model Container -->
+  <div class="model"></div>
+
+  <!-- AR Button Container -->
+  <div id="ar-button-container" style="position: fixed; bottom: 20px; right: 20px; z-index: 999;"></div>
+
+  <!-- Navigation -->
+  <nav>
+    <p><span>UrbanOak</span></p>
+    <a href="#">Store</a>
+  </nav>
+
+  <!-- Intro Section -->
+  <section class="intro">
+    <div class="header-row">
+      <h1>Spaces for</h1>
+    </div>
+    <div class="header-row">
+      <h1>Future</h1>
+      <p>
+        Innovative furniture design studio, crafting sustainable, bespoke, and
+        functional solutions for homes and businesses.
+      </p>
+    </div>
+    <div class="header-row">
+      <h1>Living Here</h1>
+    </div>
+
+    <!-- Color Palette -->
+    <div class="color-palette">
+      <button class="color-btn active" data-bg="#ffffff" data-color="#05172f" style="background: #ffffff;" title="Default"></button>
+      <button class="color-btn" data-bg="#06141B" data-color="#FFFFF0" style="background: #06141B;" title="Royal Navy Blue & Ivory"></button>
+      <button class="color-btn" data-bg="#dbeafe" data-color="#1e3a8a" style="background: #dbeafe;" title="Soft Blue"></button>
+      <button class="color-btn" data-bg="#2E003E" data-color="#F3E8FF" style="background: #2E003E;" title="Blackberry"></button>
+    </div>
+  </section>
+
+  <!-- Archive Section -->
+  <section class="archive">
+    <div class="archive-header">
+      <p>Collection</p>
+    </div>
+
+    <!-- Products -->
+    <div class="archive-item">
+      <h2>Ripple Bench</h2>
+      <div class="archive-info">
+        <p>US / EU</p><p>Design Concept</p><p>Bench</p><p>Outdoor</p>
+      </div>
+    </div>
+    <div class="archive-item">
+      <h2>Arc Table</h2>
+      <div class="archive-info">
+        <p>US / EU</p><p>Design Concept</p><p>Table</p><p>Modern</p>
+      </div>
+    </div>
+    <div class="archive-item">
+      <h2>Orb Vase</h2>
+      <div class="archive-info">
+        <p>US / EU</p><p>Limited Edition</p><p>Decor</p><p>Contemporary</p>
+      </div>
+    </div>
+    <div class="archive-item">
+      <h2>Grid Shelving</h2>
+      <div class="archive-info">
+        <p>US / EU</p><p>Project Details</p><p>Shelving</p><p>Industrial</p>
+      </div>
+    </div>
+    <div class="archive-item">
+      <h2>Halo Pendant</h2>
+      <div class="archive-info">
+        <p>US / EU</p><p>Project Details</p><p>Lighting</p><p>Modern</p>
+      </div>
+    </div>
+    <div class="archive-item">
+      <h2>Flow Chair</h2>
+      <div class="archive-info">
+        <p>US / EU</p><p>Project Details</p><p>Armchair</p><p>Minimalist</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Outro Section -->
+  <section class="outro">
+    <div class="outro-copy">
+      <h2>We are an Indian design atelier specializing in bespoke furniture, spatial installations, and immersive visual experiences.</h2>
+      <p>Promos: <span>info@urbanoak.com</span></p>
+      <p>Contact: <span>contactus@urbanoak.com</span></p>
+    </div>
+    <div class="footer">
+      <p>Copyright © 2025 UrbanOak Inc. All rights reserved.</p>
+      <p>India</p>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/lenis@1.1.16/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/split-type"></script>
+  <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Akkurat Trail TT", sans-serif;
+}
+
+html, body {
+  width: 100vw;
+  height: 400vh;
+  background-color: #ffffff; /* Default background */
+  color: #05172f; /* Default text color */
+  overflow-x: hidden;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: clamp(48px, 12vw, 225px);
+  font-weight: 400;
+  line-height: 0.85;
+  color: #05172f;
+  transition: color 0.5s ease;
+}
+
+a, p {
+  text-decoration: none;
+  color: #05172f;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.5;
+  transition: color 0.5s ease;
+}
+
+p span {
+  font-family: "Gascogne Serial", serif;
+}
+
+.model {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.model canvas {
+  transition: opacity 0.5s ease;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  background: rgba(245, 245, 245, 0.8);
+  backdrop-filter: blur(5px);
+}
+
+nav p {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0;
+  transition: color 0.5s ease;
+}
+
+nav a {
+  text-transform: uppercase;
+  transition: color 0.5s ease;
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1em;
+}
+
+.color-palette {
+  position: absolute;
+  top: 50%;
+  right: 2em;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  z-index: 999;
+}
+
+.color-btn {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2px solid #0a000020;
+  cursor: pointer;
+  transition: transform 0.3s ease, border 0.3s ease;
+}
+
+.color-btn:hover {
+  transform: scale(1.5);
+}
+
+/* Active color button styling */
+.color-btn.active {
+  border: 3px solid #000;
+  transform: scale(1.4);
+}
+
+.header-row {
+  display: flex;
+  gap: 12em;
+  align-items: center;
+}
+
+.header-row p {
+  text-transform: uppercase;
+  width: 20%;
+  transition: color 0.5s ease;
+}
+
+.archive {
+  height: 200vh;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.archive-header p {
+  font-family: "Gascogne Serial", serif;
+  font-style: italic;
+}
+
+.archive h2 {
+  font-family: "Gascogne Serial", serif;
+  font-size: 120px;
+  font-weight: 300;
+  color: #05172f;
+  transition: color 0.5s ease;
+}
+
+.archive-info {
+  width: 100%;
+  padding: 1em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.archive-info p {
+  text-transform: uppercase;
+  color: #05172f;
+  transition: color 0.5s ease;
+}
+
+.outro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 6em 2em 2em 2em;
+}
+
+.outro-copy h2 {
+  width: 75%;
+  text-transform: uppercase;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 1;
+  margin-bottom: 0.5em;
+  color: #05172f;
+  transition: color 0.5s ease;
+}
+
+.outro-copy h2 .line {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  overflow: hidden;
+  display: block;
+}
+
+.outro-copy h2 .line span {
+  will-change: transform;
+  display: flex;
+  transform: translateY(70px);
+}
+
+.outro-copy p {
+  display: flex;
+  margin: 1em 0;
+  gap: 2em;
+  text-transform: uppercase;
+  transition: color 0.5s ease;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  text-transform: uppercase;
+  transition: color 0.5s ease;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
